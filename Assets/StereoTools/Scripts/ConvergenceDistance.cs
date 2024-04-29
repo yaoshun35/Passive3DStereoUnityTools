@@ -8,7 +8,7 @@ public class ConvergenceDistance : MonoBehaviour
     public Camera rightCamera;
 
     // 当前汇聚距离
-    private float currentDistance = 5.0f;
+    private float currentDistance = 10.0f;
 
     // 汇聚距离调节幅度
     private float adjustStep = 1.0f;
