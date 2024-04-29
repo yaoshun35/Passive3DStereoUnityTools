@@ -61,9 +61,15 @@
     <Compile Include="Assets\StereoTools\Scripts\FullscreenAndResolution.cs" />
     <Compile Include="Assets\StereoTools\Scripts\PupillaryDistance.cs" />
     <Compile Include="Assets\StereoTools\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\StereoTools\Scripts\simple_selfRot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\StreamingAssets\resolution.txt" />
+    <None Include="Assets\Graphy - Ultimate Stats Monitor\Changelog.txt" />
+    <None Include="Assets\Graphy - Ultimate Stats Monitor\Shaders\GraphMobile.shader" />
+    <None Include="Assets\Graphy - Ultimate Stats Monitor\Font\Northwest-Bold\ERIC-TIRADO-NORTHWEST-LICENSE.txt" />
+    <None Include="Assets\Graphy - Ultimate Stats Monitor\Font\Roboto\LICENSE.txt" />
+    <None Include="Assets\Graphy - Ultimate Stats Monitor\Shaders\GraphStandard.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -641,6 +647,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Tayx.Graphy.Editor.csproj">
+      <Project>{2DEED566-DDC1-823F-6AAF-7DB05472D368}</Project>
+      <Name>Tayx.Graphy.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Tayx.Graphy.csproj">
+      <Project>{E45AD6BD-F872-AFE7-9CC9-6A83D697E88C}</Project>
+      <Name>Tayx.Graphy</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

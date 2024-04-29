@@ -11,7 +11,7 @@ public class ConvergenceDistance : MonoBehaviour
     private float currentDistance = 10.0f;
 
     // 汇聚距离调节幅度
-    private float adjustStep = 1.0f;
+    private float adjustStep = 0.02f;
 
     // 最大汇聚距离
     private float maxDistance = 100.0f;
@@ -31,7 +31,7 @@ public class ConvergenceDistance : MonoBehaviour
     void Update()
     {
         // 按下 I 键减小汇聚距离
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKey(KeyCode.I))
         {
             currentDistance = Mathf.Clamp(currentDistance - adjustStep, minDistance, maxDistance);
             UpdateCameraRotations();
@@ -39,7 +39,7 @@ public class ConvergenceDistance : MonoBehaviour
         }
 
         // 按下 O 键增加汇聚距离
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKey(KeyCode.O))
         {
             currentDistance = Mathf.Clamp(currentDistance + adjustStep, minDistance, maxDistance);
             UpdateCameraRotations();
